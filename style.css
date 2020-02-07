@@ -1,0 +1,125 @@
+*{  
+    font-family: Montserrat;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+}
+ 
+canvas {
+    /*border: solid 5px grey;*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+}
+
+#naKanvasu{
+    position: absolute;
+    top: 85vh;
+    z-index: 2;
+    left: calc(50vw - 7em);
+}
+
+.box, #con{
+    /*border: solid 5px grey;*/
+
+    width: 75vw;
+    height: 75vh;
+
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#naslov{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: #101010;
+    color: white;
+}
+
+#igraci{
+    width: 10em;
+    display: block;
+    height: 4em;
+}
+
+#gameover{
+    flex-direction: column;
+}
+
+#dugmici{
+    display: flex;
+    flex-direction: row;
+}
+
+#main{
+    padding-left: 15vw;
+}
+
+#izaberiIgru{
+    flex-direction: column;
+}
+
+#upute{
+    font-size: 1.1em;
+    padding: 10em;
+    justify-content: center;
+}
+
+#info{
+    flex-direction: column;
+}
+
+#info h6{
+    margin-bottom: 0;
+}
+
+#uputeNazad{
+    clear: both;
+    left: -7vw;
+}
+
+.container{
+    margin-bottom: 3em;
+}
+
+button{
+    margin: 5px; 
+    width: 10em;
+    height: 3em; 
+}
+
+.btn-danger{
+     margin: 5px+1vw; 
+}
+
+
+#kraj{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em; 
+}
+
+#kraj h3,h2{
+    margin-top: 0;
+}

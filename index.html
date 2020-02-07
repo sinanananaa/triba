@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRIBA</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="pocetna()">
+
+	<div id="naslov">
+		<h1> T R I B A </h1>
+	</div>
+
+	<!-- IGRA -->
+	
+	<div class="box" id="igra">
+
+		<script type="text/javascript" src="js/logic.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+
+	</div>
+
+	<div id="dugme">
+		<button type="button" class="btn btn-danger" class="nazad" id="naKanvasu" onclick="nazad()">NAZAD</button>
+	</div>
+	
+	<!-- POČETNI IZBORNIK -->
+
+	<div class="box1" id="main">
+		<div class="container" id="con">
+	  		<button type="button" class="btn btn-danger" id="uputstvaButton" onclick="uputstva()">Uputstva</button>
+	    	<button type="button" class="btn btn-danger" id="opcijeButton" onclick="opcije()">Nova igra</button>
+	    	<button type="button" class="btn btn-danger" id="aboutButton" onclick="about()">Projekat</button>
+		</div>
+	</div>
+
+	<!-- BIRANJE IGRE-->
+
+	<div class="box" id="izaberiIgru">
+		<div class="container" style="width: auto">
+			<button type="button" class="btn btn-danger" class="igraj" onclick="startGame(6,6)">6x6</button>
+	    	<button type="button" class="btn btn-danger" class="igraj" onclick="startGame(5,7)">5x7</button>
+	    	<button type="button" class="btn btn-danger" class="igraj" onclick="startGame(8,6)">8x6</button>
+	    	<button type="button" class="btn btn-danger" class="igraj" onclick="startGameTrougaona(7)">Trougaona</button>
+		</div>
+		<button type="button" class="btn btn-danger" class="nazad" onclick="nazad()">NAZAD</button>
+	</div>
+	
+	<!-- UPUSTVA O IGRICI -->
+
+	<div class="box" id="upute">
+		<h3>Upute</h3>
+		<p>Igra počinje sa praznom pločom na kojoj su iscrtane tačke. Igraju dva igrača: Igrač A i Igrač B. U svakom potezu Igrač koji je na redu na ploči bira tri tačke koje čine trougao, takav da se ne presijeca ni sa jednim trouglom ranije nacrtanim (nema zajedničkih tačaka). Ukoliko trougao napravljen od odabranih tacaka presijeca neki od već nacrtanih trouglova, igrač na potezu ponovo bira 3 tačke. Izgubio je igrač koji više ne može nacrtati trougao.</p>
+
+		<button type="button" class="btn btn-danger" class="nazad" id="uputeNazad" onclick="nazad()">NAZAD</button>
+	</div>
+
+	<!-- O PROJEKTU -->
+
+	<div class="box" id="info">
+		<h6>Naziv predmet: </h6>
+		<p>Web programiranje </p>
+		<h6>Profesor: </h6>
+		<p>Elmedin Selmanović </p>
+		<h6>Asistent: </h6>
+		<p>Sead Delalić </p>
+		<h6>Studij: </h6>
+		<p>Teorijska kompjuterska nauka </p>
+		<h6>Fakultet: </h6>
+		<p>Prirodno-matematički fakultet </p>
+		<h6>Projekat: </h6>
+		<p>TRIBA </p>
+		<h6>Ime studenta: </h6>
+		<p>Amina Sinanović </p>
+		<button type="button" class="btn btn-danger" class="nazad" onclick="nazad()">NAZAD</button>
+	</div>
+
+	<!-- GAME OVER -->
+
+	<div class="box" id="gameover">
+		<div id="kraj">
+			<h3>K R A J</h3>
+			<h6>POBJEDNIK JE </h6>
+			<h2 id="pobjednik"></h2>
+		</div>
+
+		<div id="dugmici">
+			<button type="button" class="btn btn-danger" class="nazad" onclick="nazad()">NAZAD</button>
+			<button type="button" class="btn btn-danger" class="ponovo" onclick="igrajPonovo()">IGRAJ PONOVO</button>
+		</div>
+	</div>
+
+</body>
+</html>
