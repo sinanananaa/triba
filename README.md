@@ -1,0 +1,2 @@
+# triba
+TRIBA - igrica
